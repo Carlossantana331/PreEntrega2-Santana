@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--linkear css-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Multiservicios DESSMART</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="logo de la empresa"></a>
+            <ul class="nav_list">
+                <li><a href="../pages/electrico.html" class="nav_link">Electrico</a></li>
+                <li><a href="../pages/maderas.html" class="nav_link">Maderas</a></li>
+                <li><a href="../pages/quimicos.html" class="nav_link">Químicos</a></li>
+                <li><a href="../pages/contacto.html" class="nav_link">Contacto</a></li>
+
+                <form class="buscar">
+                    <input type="search" placeholder="Buscar">
+                    <button class="btn_buscar" type="submit"><i class="bi bi-search "></i></button>
+                </form>
+            </ul>
+
+            <section class="navbar fixed-top navbar_hamburguesa">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <a href="../index.html">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DESSMART</h5>
+                            </a>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item li_hamburguesa">
+                                    <a class="nav-link" aria-current="page"href="../pages/electrico.html">Electrico</a>
+                                </li>
+                                <li class="nav-item li_hamburguesa">
+                                    <a class="nav-link" href="../pages/maderas.html">Maderas</a>
+                                </li>
+                                <li class="nav-item li_hamburguesa">
+                                    <a class="nav-link" href="../pages/quimicos.html">Químicos</a>
+                                </li>
+                                <li class="nav-item li_hamburguesa">
+                                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                                </li>
+                            </ul>
+
+                            <form class="d-flex mt-3 buscar_hamburguesa" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="btn_buscar" type="submit"><i class="bi bi-search "></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--portada-->
+        <section class="portada_categoria">
+            <article>
+                <img src="../assets/images/electrico.jpg" alt="imagen relacionada a servicios electricos">
+            </article>
+            <article class="texto_portada_categoria">
+                <h5>Electrico</h5>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam animi alias ipsum ipsa, sint temporibus fugit nemo placeat earum magni deserunt iure reiciendis voluptatum impedit quae est, harum mollitia et?</p>
+            </article>
+        </section>
+
+
+        <!--servicios-->
+        <section class="servicios_electricos">
+            <section class="servicio_elect">
+                <article >
+                    <img src="../assets/images/servicio_electrico.jpg" alt="imagen de servicio electrico">
+                </article>
+                <article class="texto_servicio_elect">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quaerat harum architecto vel tempora labore porro. Ipsa quasi aliquam cumque voluptatum eius voluptatem, sapiente excepturi consequatur consequuntur, esse dignissimos deserunt neque aut soluta vitae quos enim. Asperiores doloribus fugiat nobis voluptates adipisci, voluptatem explicabo, architecto consequuntur deleniti vel sint. Dolorum ducimus, asperiores commodi molestiae maiores libero saepe eligendi magnam dolores voluptates voluptas reprehenderit culpa laudantium repellat. Temporibus odio rerum eos fugit. Tempora aliquid nesciunt sint voluptas impedit a, rerum aperiam sit assumenda debitis dolorum laborum accusantium voluptatum ducimus eos cumque optio minus perspiciatis culpa earum illum inventore magnam tenetur ad.</p>
+                    <button>VER MAS</button>
+                </article>
+            </section>
+            
+            <section class="servicio_elect servicio_elect_invertido">
+                <article class="texto_servicio_elect">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quaerat harum architecto vel tempora labore porro. Ipsa quasi aliquam cumque voluptatum eius voluptatem, sapiente excepturi consequatur consequuntur, esse dignissimos deserunt neque aut soluta vitae quos enim. Asperiores doloribus fugiat nobis voluptates adipisci, voluptatem explicabo, architecto consequuntur deleniti vel sint. Dolorum ducimus, asperiores commodi molestiae maiores libero saepe eligendi magnam dolores voluptates voluptas reprehenderit culpa laudantium repellat. Temporibus odio rerum eos fugit. Tempora aliquid nesciunt sint voluptas impedit a, rerum aperiam sit assumenda debitis dolorum laborum accusantium voluptatum ducimus eos cumque optio minus perspiciatis culpa earum illum inventore magnam tenetur ad.</p>
+                    <button class="btn_servicio_elect_invertido">VER MAS</button>
+                </article>
+                <article>
+                    <img src="../assets/images/servicio_electrico.jpg" alt="imagen de servicio electrico">
+                </article>
+                
+            </section>
+            <section class="servicio_elect">
+                <article>
+                    <img src="../assets/images/servicio_electrico.jpg" alt="imagen de servicio electrico">
+                </article>
+                <article class="texto_servicio_elect">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quaerat harum architecto vel tempora labore porro. Ipsa quasi aliquam cumque voluptatum eius voluptatem, sapiente excepturi consequatur consequuntur, esse dignissimos deserunt neque aut soluta vitae quos enim. Asperiores doloribus fugiat nobis voluptates adipisci, voluptatem explicabo, architecto consequuntur deleniti vel sint. Dolorum ducimus, asperiores commodi molestiae maiores libero saepe eligendi magnam dolores voluptates voluptas reprehenderit culpa laudantium repellat. Temporibus odio rerum eos fugit. Tempora aliquid nesciunt sint voluptas impedit a, rerum aperiam sit assumenda debitis dolorum laborum accusantium voluptatum ducimus eos cumque optio minus perspiciatis culpa earum illum inventore magnam tenetur ad.</p>
+                    <button>VER MAS</button>
+                </article>
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <section>
+            <a href="../index.html" class="logo"><img src="../assets/images/logo.png" alt="logo de la empresa"></a>
+        </section>
+        <!--link iconos redes sociales-->
+        <section class="redes">
+            <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+            <a href="https://www.facebook.com" target="_blank" class="icono"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="icono"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com" target="_blank" class="icono"><i class="bi bi-instagram"></i></a>
+        </section>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*general*/
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+
+
+/*header*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 19, 19);
+}
+
+.nav_list {
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    margin-right: 40px;
+}
+
+.nav_link {
+    padding: 10px;
+    color: #fff;
+}
+
+.nav_link:hover {
+    border-bottom: 2px solid #fff;
+}
+.logo img {
+    height: 70px;
+    margin: 20px;
+}
+.logo img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.btn_buscar {
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(243, 238, 230, 0);
+    border: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    margin-left: -5px;
+}
+.btn_buscar:hover {
+    color: #131212;
+    background-color: #fff;
+}
+.buscar input {
+    background-color: #ffffff00;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 2px;
+}
+.buscar{
+    margin-left: 20px;
+}
+
+/*navbar hamburguesa*/
+.navbar_hamburguesa{
+    display: none;
+}
+.fixed-top{
+    position: static;
+}
+.navbar-toggler-icon{
+    color: #e0e0e0;
+    border-radius: 10px;
+}
+.navbar-toggler{
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 0px 10px;
+    padding-top: 5px;
+}
+.navbar .container-fluid{
+    justify-content: end;
+    align-items: center;
+}
+.offcanvas-body .btn_buscar{
+    color: #0c0c0c;
+    margin: 0 auto;
+    padding: 5px;
+}
+.offcanvas-header{
+    background-color: #0c0c0c;
+    color: #fff;
+}
+.offcanvas-header .btn-close{
+    color: #fff;
+}
+.offcanvas-body .li_hamburguesa:hover{
+    border-bottom: 1px solid #0c0c0c;
+}
+
+
+/*portada*/
+
+/*index*/
+.container_portada {
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
+.carousel-item img {
+    width: auto;
+    height: 700px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+}
+.carousel_portada {
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    margin: 45px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+}
+.carousel-caption {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+}
+h5 {
+    background-color: #131212;
+    color: #d1cdcd;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 22px;
+}
+.container_portada h5:hover {
+    background-color: #dad1d1;
+    color: #131212;
+}
+.carousel-caption p {
+    background-color: rgba(240, 248, 255, 0.726);
+    padding: 15px;
+    text-align: justify;
+    border-radius: 10px;
+}
+
+/*nosotros*/ 
+.nosotros{
+    text-align: center;
+    background-color: #0c0c0c;
+    padding: 80px;
+}
+.nosotros article{
+    display: inline-block;
+    padding: 10px;
+}
+.nosotros_texto{
+    width: 400px;
+    height: 450px;
+    overflow: auto;
+    color: #fff;
+    text-align: justify;
+    background-color: #414040;
+}
+.nosotros iframe{
+    width: 800px;
+    height: 450px;
+}
+.nosotros_texto h2{
+    color: #131212;
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/*top ventas*/
+.top_ventas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px;
+    gap: 40px;
+}
+.titulo_top_ventas{
+    background-color: #131212;
+    color: #fff;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+.top_ventas_productos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+}
+.top_ventas_productos img{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+    border-radius: 10px;
+}
+.card{
+    border: none;
+    text-align: center;
+}
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h5{
+    color: #fffcfc;
+    padding: 10px 50px;
+    margin-top: 20px;
+}
+.card h6 {
+    color: #fff;
+    background-color: #131212;
+    padding: 10px 15px;
+    border-radius: 30%;
+}
+.card .btn{
+    background-color: #131212;
+    color: #fff;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+}
+
+
+
+/*electrico*/
+/*portada*/
+.portada_categoria{
+    text-align: center;
+}
+.portada_categoria img{
+    position: relative;
+    width: 80%;
+    height: 700px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    margin: 45px 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+}
+.texto_portada_categoria{
+    position: absolute;
+    top: 75%;
+    left: 15%;
+}
+.texto_portada_categoria p{
+    background-color: rgba(240, 248, 255, 0.726);
+    width: 550px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*servicios electricos*/
+.servicios_electricos{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    background-color: #131212;
+    padding: 60px 0px;
+}
+.servicio_elect{
+    position: relative;
+    display: flex;
+    text-align: justify;
+    padding: 0px 20px;
+    background-color: #414040;
+    border-radius: 10px;
+    width: 80%;
+}
+.servicio_elect img{
+    width: 700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+}
+.servicio_elect p{
+    max-width: 100%;
+    height: 90%;
+    background-color: rgba(240, 248, 255, 0.63);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 20px;
+}
+.servicio_elect button{
+    background-color: #131212;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+.servicio_elect button:hover{
+    background-color: #e0e0e0;
+    color: #131212;
+}
+.servicio_elect .btn_servicio_elect_invertido{
+    left: 0%;
+}
+.servicio_elect .btn_servicio_elect_invertido{
+    left: 40%;
+}
+
+
+/*maderas*/
+/*categorias*/
+.categorias_maderas{
+    text-align: center;
+    padding: 60px;
+    background-color: #0c0c0c;
+}
+.titulo_cat_maderas{
+    background-color: #414040;
+    color: #fff;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+}
+.card_cat_maderas{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background-color: #414040;
+    padding: 20px;
+    border-radius: 10px;
+    width: 65%;
+    margin: 0 auto;
+}
+.card_cat_maderas img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+}
+.card_maderas{
+    position: relative;
+}
+.card_cat_maderas button{
+    background-color: #131212;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: absolute;
+    z-index: 1;
+    left: 35%;
+    top: 65%;
+}
+.card_cat_maderas button:hover{
+    background-color: #e0e0e0;
+    color: #131212;
+}
+
+
+/*articulos de madera*/
+.articulos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px 100px;
+}
+.articulo_madera{
+    border-radius: 10px;
+    border: 2px solid #131212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.articulo_madera:hover{
+    background-color: #414040;
+    color: #fff;
+}
+.articulo_madera img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+    margin: 0 auto;
+}
+.texto_articulo_madera{
+    text-align: center;
+}
+.texto_articulo_madera p{
+    font-size: 18px;
+}
+.texto_articulo_madera button{
+    background-color: #131212;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.texto_articulo_madera button:hover{
+    background-color: #e0e0e0;
+    color: #131212;
+}
+.texto_articulo_madera .precio{
+    font-size: 22px;
+    background-color: #d31d1d;
+    color: #fff;
+    width: 50px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.paginas_maderas{
+    text-align: center;
+    margin: 20px;
+    font-size: 22px;
+}
+.paginas_maderas a{
+    color: #0c0c0c;
+    border: 2px solid #0a0a0a;
+    padding: 10px;
+}
+.paginas_maderas a:hover{
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+
+
+/*quimicos*/
+.portada_quimicos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+}
+.servicios_quimicos img,
+.productos_quimicos img{
+    width: 700px;
+    height: 800px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+}
+.servicios_quimicos,
+.productos_quimicos{
+    position: relative;
+    margin: 0 auto;
+}
+.servicios_quimicos h5,
+.productos_quimicos h5{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    font-size: 30px;
+    background-color: #131212;
+    color: #fff;
+    padding: 50px 0px;
+    border-radius: 0px;
+}
+.productos_quimicos h6{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 16px;
+    background-color: #cf0606;
+    color: #fff;
+    padding: 30px 0px;
+    border-radius: 0px;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto 0;
+    line-height: 90px;
+}
+.servicios_quimicos h5:hover,
+.productos_quimicos h5:hover{
+    padding: 48px;
+    font-size: 34px;
+}
+
+
+
+/*contacto*/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+}
+.contacto h5{
+    background-color: #131212;
+    color: #fff;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+    text-align: center;
+}
+.form_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.form_contacto input,
+.form_contacto textarea {
+    background-color: #ffffff;
+    color: #080808;
+    padding: 10px;
+    width: 600px;
+    border-radius: 10px;
+    border: 2px solid #131212;
+}
+.form_contacto textarea{
+    height: 250px;
+}
+.btn_contacto:hover{
+    color: #e0e0e0;
+    background-color: #131212;
+}
+
+
+
+/*iconos footer*/
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 10px 20px;
+}
+.icono {
+    padding: 10px;
+    color: #fff;
+}
+.icono:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+.icono i {
+    font-size: 25px;
+    text-align: center;
+}
+footer {
+    text-align: center;
+    background-color: rgb(20, 19, 19);
+    padding: 20px;
+}
+
+
+
+/*responsive*/
+
+/*navbar*/
+@media (max-width: 1024px) {
+    nav .buscar,
+    nav .nav_list{
+        display: none;
+    }
+    .navbar_hamburguesa{
+        display: block;
+        margin: 30px 40px 0px; 
+    }
+}
+
+
+
+/*index*/
+@media (max-width: 1024px) {
+    .nosotros_texto{
+        width: 100%;
+    }
+    .nosotros iframe{
+        max-width: 100%;
+    }
+    .top_ventas_productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .texto_portada p{
+        display: none;
+    }
+    .nosotros_texto,
+    .top_ventas_productos{
+        font-size: 16px;
+    }
+}
+
+
+/*electrico*/
+@media (max-width: 1024px) {
+    .texto_portada_categoria,
+    .texto_portada_categoria h5,
+    .texto_portada_categoria p{
+        width: 80%;
+        font-size: 16px;
+        left: 18%;
+    }
+    .servicio_elect{
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicio_elect_invertido{
+        flex-direction: column-reverse;
+    }
+    .servicio_elect button{
+        position: static;
+        margin: auto;
+    }
+    .texto_servicio_elect{
+        max-width: 100%;
+        text-align: center;
+        padding: 10px 0px 30px 0px;
+    }	
+}
+@media (max-width: 768px) {
+    .texto_portada_categoria p{
+        display: none;
+    }
+    .texto_portada_categoria{
+        top: 85%;
+    }
+
+    .servicio_elect{
+        width: 70%;
+        gap: 0px;
+    }
+    .servicio_elect img,
+    .texto_servicio_elect{
+        width: 100%;
+        margin: 10px auto;
+    }
+}
+
+
+
+
+
+
+
+/*maderas*/
+@media (max-width: 1300px) {
+    .articulos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 1024px) {
+    .articulos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card_cat_maderas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .articulos{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+/*quimicos*/
+@media (max-width: 1024px) {
+    .portada_quimicos{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        justify-content: center;
+    }
+}
