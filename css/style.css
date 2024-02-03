@@ -99,7 +99,7 @@ nav {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     padding: 0px 10px;
-    padding-top: 5px;
+    padding-top: 10px;
 }
 .navbar .container-fluid{
     justify-content: end;
@@ -601,7 +601,10 @@ footer {
     }
     .navbar_hamburguesa{
         display: block;
-        margin: 30px 40px 0px; 
+        margin: 0px 40px 0px; 
+    }
+    .navbar-toggler {
+        font-size: 25px;
     }
 }
 
@@ -681,11 +684,14 @@ footer {
 /*electrico*/
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .texto_portada_categoria,
-    .texto_portada_categoria h5,
-    .texto_portada_categoria p{
+    .texto_portada_categoria h5{
         width: 80%;
         font-size: 16px;
         left: 18%;
+        top: 55%;
+    }
+    .texto_portada_categoria p{
+        display: none;
     }
     .servicio_elect{
         flex-direction: column;
