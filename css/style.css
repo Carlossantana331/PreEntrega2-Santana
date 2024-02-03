@@ -35,6 +35,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: rgb(20, 19, 19);
+    align-items: center;
 }
 
 .nav_list {
@@ -292,7 +293,6 @@ h5 {
     padding: 60px 0px;
 }
 .servicio_elect{
-    position: relative;
     display: flex;
     text-align: justify;
     padding: 0px 20px;
@@ -318,6 +318,9 @@ h5 {
     font-size: 16px;
     padding: 20px;
 }
+.texto_servicio_elect{
+    position: relative;
+}
 .servicio_elect button{
     background-color: #131212;
     color: #fff;
@@ -325,8 +328,8 @@ h5 {
     border-radius: 10px;
     margin-top: 20px;
     position: absolute;
-    top: 70%;
-    left: 50%;
+    top: 75%;
+    left: 40%;
 }
 .servicio_elect button:hover{
     background-color: #e0e0e0;
@@ -469,10 +472,11 @@ h5 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 50px;
+    gap: 5%;
 }
 .servicios_quimicos img,
 .productos_quimicos img{
-    width: 700px;
+    width: 100%;
     height: 800px;
     object-fit: cover;
     object-position: top;
@@ -604,7 +608,7 @@ footer {
 
 
 /*index*/
-@media (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .nosotros_texto{
         width: 100%;
     }
@@ -616,20 +620,66 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
-}
-@media (max-width: 768px) {
-    .texto_portada p{
-        display: none;
-    }
     .nosotros_texto,
     .top_ventas_productos{
         font-size: 16px;
     }
 }
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .texto_portada p{
+        display: none;
+    }
+    .logo img {
+        height: 20px;
+        margin: 10px;
+        align-content: center;
+    }
+    .nav {
+        align-content: center;
+    }
+    .navbar_hamburguesa {
+        margin: 5px;
+    }
+    .navbar-toggler {
+        font-size: 10px;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+    .container_portada {
+        padding: 0px;
+    }
+    .nosotros {
+        padding: 10px;
+    }
+    .nosotros article {
+        height: 300px;
+        width: 100%;
+    }
+    .nosotros iframe {
+        height: 100%;
+        width: 100%;
+    }
+    .nosotros p {
+        font-size: 12px;
+    }
+    .top_ventas_productos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    .icono i {
+        font-size: 10px;
+        text-align: center;
+    }
+    footer {
+    padding: 5px;
+    }
+}
 
 
 /*electrico*/
-@media (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .texto_portada_categoria,
     .texto_portada_categoria h5,
     .texto_portada_categoria p{
@@ -653,15 +703,6 @@ footer {
         text-align: center;
         padding: 10px 0px 30px 0px;
     }	
-}
-@media (max-width: 768px) {
-    .texto_portada_categoria p{
-        display: none;
-    }
-    .texto_portada_categoria{
-        top: 85%;
-    }
-
     .servicio_elect{
         width: 70%;
         gap: 0px;
@@ -673,6 +714,45 @@ footer {
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .portada_categoria img {
+        height: 300px;
+        margin: 45px 0px;
+    }
+    .servicio_elect img {
+        width: 100%;
+        margin: 0px;
+    }
+    .texto_portada_categoria p {
+        display: none;
+    }
+    .texto_portada_categoria {
+        top: 35%;
+        left: 42%;
+    }
+    .servicio_elect {
+        width: 95%;
+        flex-direction: column;
+        padding: 0px;
+        margin: 5px;
+        gap: 20px;
+    }
+    .texto_servicio_elect {
+        height: 350px;
+        font-size: 12px;
+        overflow: auto;
+    }
+    .servicio_elect p {
+        height: 100vh;
+    }
+    .servicio_elect button {
+        display: none;
+    }
+    .servicio_elect_invertido{
+        flex-direction: column-reverse;
+    }
+}
+
 
 
 
@@ -680,14 +760,16 @@ footer {
 
 
 /*maderas*/
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
     .articulos{
         grid-template-columns: repeat(3, 1fr);
+        padding: 10px 2px;
     }
 }
 @media (max-width: 1024px) {
     .articulos{
         grid-template-columns: repeat(2, 1fr);
+        padding: 10px 2px;
     }
     .card_cat_maderas{
         display: flex;
@@ -697,9 +779,35 @@ footer {
         width: 90%;
     }
 }
-@media (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 768px){
     .articulos{
         grid-template-columns: repeat(1, 1fr);
+    }.card_cat_maderas {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 95vw;
+        padding: 0px;
+        margin: 0 auto;
+    }
+    .categorias_maderas {
+        padding: 0px;
+        align-items: center;
+    }
+    .titulo_cat_maderas {
+        width: 100vw;
+    }
+    .articulos, 
+    .articulo_madera {
+        padding: 10px 2px;
+    }
+    .articulo_madera img {
+        width: 80%;
+        height: 40%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.699);
+        margin: 0 auto;
     }
 }
 
@@ -711,5 +819,29 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         gap: 40px;
         justify-content: center;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .servicios_quimicos img,
+    .productos_quimicos img{
+        width: 90vw;
+        height: 350px;
+    }
+    .servicios_quimicos h5,
+    .productos_quimicos h5{
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+
+/*contacto*/
+@media screen and (min-width: 320px) and (max-width: 768px){
+    .form_contacto input, 
+    .form_contacto textarea,
+    .contacto h5 {
+        width: 95vw;
     }
 }
