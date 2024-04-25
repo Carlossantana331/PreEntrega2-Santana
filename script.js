@@ -3,7 +3,7 @@
 function listaTareas(tareas) {
     let lista = "Lista de tareas: \n";
     for (let i = 0; i < tareas.length; i++) {
-        lista += (i + 1) + "- Tarea por hacer: " + tareas[i].tarea + "\n    Fecha límite: " + tareas[i].fechaLimite + "\n--------------------------------------\n";
+        lista += (i + 1) + "- Tarea por hacer: " + tareas[i].tarea + "\n   Fecha límite: " + tareas[i].fechaLimite + "\n--------------------------------------\n";
     }
     return lista;
 }
@@ -15,17 +15,17 @@ function tareaPorHacer (tarea, fechaLimite) {
 }
 
 
-// Función para agregar una nueva tarea al array
+// Funcion para agregar una nueva tarea al array
 function agregarTarea(nuevaTarea) {
     tareas.push(nuevaTarea);
 }
 
 
-//funcion para validar que la fecha sea ingresada como se solicita
+//Funcion para validar que la fecha sea ingresada como se solicita
 function validarFecha(fecha) {
-    // Expresión regular para el formato DD-MM
-    let regex = /^\d{2}-\d{2}$/;
-    if (!regex.test(fecha)) {
+    
+    let formatoFecha = /^\d{2}-\d{2}$/;  // Expresión regular para el formato DD-MM
+    if (!formatoFecha.test(fecha)) {
         return false;
     }
 
@@ -65,7 +65,7 @@ while (continuar){
 
     //verificar si la entrada no es un número válido
     if (isNaN(eleccion)) {
-        console.log("Entrada inválida. Por favor, ingresa un número válido.");
+        alert("Entrada inválida. Por favor, ingresa un número válido.");
         continue;
     }
 
@@ -82,6 +82,7 @@ while (continuar){
             //verifica si la fecha es valida usando la funcion "validarFecha"
             let fechaValida = false;
             let fechaLimite;
+            
             while (!fechaValida) {
                 fechaLimite = prompt("Ingrese la fecha límite para la tarea (en formato: DD-MM): ");
                 if (validarFecha(fechaLimite)) {
@@ -121,14 +122,14 @@ while (continuar){
 
         //termina el bucle 
         case 3:
-            console.log("Espero haberlo ayudado, adios")
+            alert("Espero haberlo ayudado, adios")
             continuar = false
 
             break;
 
         //en caso de que el numero ingresado por el usuario sea invalido
         default:
-            console.log("Opción no válida. Por favor, elija una opción válida.")
+            alert("Opción no válida. Por favor, elija una opción válida.")
 
     }
 }
